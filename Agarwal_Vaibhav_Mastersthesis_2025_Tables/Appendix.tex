@@ -1,0 +1,849 @@
+\begin{table}[h]
+\centering
+\fontsize{12pt}{14pt}\selectfont
+\begin{tabular}{@{}l c@{}}
+\toprule
+\textbf{Demographic} & \textbf{N (\%)} \\
+\midrule
+\textbf{Age} \\
+\quad Young Adults (Under 35)        & 209 (21\%)   \\
+\quad Middle-Aged (36-65)            & 496 (50\%)   \\
+\quad Older Adults (Over 65)         & 297 (30\%)   \\
+\quad Missing                      & 3            \\
+\midrule
+\addlinespace[2.5pt]
+\textbf{Gender} \\
+\quad Female               & 518 (52\%)   \\
+\quad Male                 & 471 (48\%)   \\
+\quad Missing              & 16           \\
+\midrule
+\addlinespace[2.5pt]
+\textbf{Education Level} \\
+\quad No College/University        & 478 (48\%)   \\
+\quad College/University Education & 524 (52\%)   \\
+\quad Missing                      & 3            \\
+\midrule
+\addlinespace[2.5pt]
+\textbf{Area} \\
+\quad Urban                & 801 (80\%)   \\
+\quad Rural                & 201 (20\%)   \\
+\quad Missing              & 3            \\
+\midrule
+\addlinespace[2.5pt]
+\textbf{Employment Status} \\
+\quad Employed             & 466 (47\%)   \\
+\quad Students               & 76 (7.6\%)   \\
+\quad Retired              & 374 (37\%)   \\
+\quad Others               & 84 (8.4\%)   \\
+\quad Missing              & 5            \\
+\midrule
+\addlinespace[2.5pt]
+\textbf{Language} \\
+\quad Finnish              & 958 (97\%)   \\
+\quad Swedish              & 28 (2.8\%)   \\
+\quad Missing              & 19           \\
+\bottomrule
+\end{tabular}
+\caption{Descriptive Statistics: Demographic}
+\label{tab:demographics}
+\end{table}
+
+\begin{table}[h]
+\centering
+\fontsize{12pt}{14pt}\selectfont
+\begin{tabular}{@{}l c@{}}
+\toprule
+\textbf{Subgroup} & \textbf{N (\%)} \\
+\midrule
+\addlinespace[2.5pt]
+\textbf{Surveillance Attitude} \\
+\quad Positive           & 915 (93\%)   \\ 
+\quad Negative           & 66 (6.7\%)   \\ 
+\quad Missing            & 24           \\ 
+\midrule
+\addlinespace[2.5pt]
+\textbf{FI Government Satisfaction} \\
+\quad Low Satisfaction   & 169 (17\%)   \\ 
+\quad Medium Satisfaction & 521 (52\%) \\
+\quad High Satisfaction  & 313 (31\%)   \\ 
+\quad Missing            & 2            \\ 
+\midrule
+\addlinespace[2.5pt]
+\textbf{Modern Tech. in Law} \\
+\quad Appropriate        & 685 (68\%)   \\ 
+\quad Not Appropriate    & 320 (32\%)   \\ 
+\midrule
+\addlinespace[2.5pt]
+\textbf{Worried - Privacy - Social Media} \\
+\quad Not Worried at All & 145 (14\%)   \\ 
+\quad Little Worried     & 468 (47\%)   \\ 
+\quad Somewhat Worried   & 263 (26\%)   \\ 
+\quad Very Worried       & 127 (13\%)   \\ 
+\quad Missing            & 2            \\ 
+\midrule
+\addlinespace[2.5pt]
+\textbf{Worried - Privacy - Public e-services} \\
+\quad Not Worried at All & 362 (36\%)   \\ 
+\quad Little Worried     & 471 (47\%)   \\ 
+\quad Somewhat Worried   & 128 (13\%)   \\ 
+\quad Very Worried       & 42 (4.2\%)   \\ 
+\quad Missing            & 2            \\ 
+\midrule
+\addlinespace[2.5pt]
+\textbf{Technology Adoption} \\
+\quad Early Adopters     & 210 (21\%)   \\ 
+\quad Majority           & 687 (68\%)   \\ 
+\quad Laggards           & 106 (11\%)   \\ 
+\quad Missing            & 2            \\ 
+\bottomrule
+\end{tabular}
+\caption{Descriptive Statistics: Important Subgroups}
+\label{tab:impsubgroup}
+\end{table}
+
+\subsection*{Appedix A2: Randomization and Robustness Check}
+
+\begin{table}[h]
+\centering
+\footnotesize
+\begin{tabular}{@{}l l c c c c@{}}
+\toprule
+Attribute & Subgroup & $\chi^2$ Statistic & df & p-value & Adjusted p-value \\
+\midrule
+decision & age\_new & 0.386 & 6 & 0.999 & 1.000 \\
+ & gender\_new & 7.835 & 3 & 0.050 & 1.000 \\
+ & edu\_new & 1.576 & 3 & 0.665 & 1.000 \\
+ & Rural\_Urban\_Group & 1.989 & 3 & 0.575 & 1.000 \\
+ & Employment\_Status\_Group & 5.997 & 9 & 0.740 & 1.000 \\
+ & lang\_new & 2.129 & 3 & 0.546 & 1.000 \\
+ & surveillance\_attitude\_new & 0.932 & 3 & 0.818 & 1.000 \\
+ & gov\_sat\_cat & 5.175 & 6 & 0.522 & 1.000 \\
+ & modrn\_tech\_law\_cat & 0.417 & 3 & 0.937 & 1.000 \\
+ & worried\_socialmedia & 7.724 & 9 & 0.562 & 1.000 \\
+ & worried\_eserv & 11.569 & 9 & 0.239 & 1.000 \\
+ & tech\_adoption\_new & 4.468 & 6 & 0.614 & 1.000 \\
+\midrule
+agency & age\_new & 5.194 & 4 & 0.268 & 1.000 \\
+ & gender\_new & 0.636 & 2 & 0.728 & 1.000 \\
+ & edu\_new & 0.025 & 2 & 0.988 & 1.000 \\
+ & Rural\_Urban\_Group & 1.607 & 2 & 0.448 & 1.000 \\
+ & Employment\_Status\_Group & 5.839 & 6 & 0.441 & 1.000 \\
+ & lang\_new & 0.419 & 2 & 0.811 & 1.000 \\
+ & surveillance\_attitude\_new & 2.248 & 2 & 0.325 & 1.000 \\
+ & gov\_sat\_cat & 1.417 & 4 & 0.841 & 1.000 \\
+ & modrn\_tech\_law\_cat & 1.223 & 2 & 0.542 & 1.000 \\
+ & worried\_socialmedia & 8.760 & 6 & 0.188 & 1.000 \\
+ & worried\_eserv & 3.815 & 6 & 0.702 & 1.000 \\
+ & tech\_adoption\_new & 3.548 & 4 & 0.471 & 1.000 \\
+\midrule
+mistake & age\_new & 3.592 & 4 & 0.464 & 1.000 \\
+ & gender\_new & 5.592 & 2 & 0.061 & 1.000 \\
+ & edu\_new & 2.842 & 2 & 0.241 & 1.000 \\
+ & Rural\_Urban\_Group & 3.736 & 2 & 0.154 & 1.000 \\
+ & Employment\_Status\_Group & 5.734 & 6 & 0.454 & 1.000 \\
+ & lang\_new & 0.820 & 2 & 0.664 & 1.000 \\
+ & surveillance\_attitude\_new & 0.030 & 2 & 0.985 & 1.000 \\
+ & gov\_sat\_cat & 2.643 & 4 & 0.619 & 1.000 \\
+ & modrn\_tech\_law\_cat & 4.658 & 2 & 0.097 & 1.000 \\
+ & worried\_socialmedia & 3.939 & 6 & 0.685 & 1.000 \\
+ & worried\_eserv & 5.947 & 6 & 0.429 & 1.000 \\
+ & tech\_adoption\_new & 3.116 & 4 & 0.539 & 1.000 \\
+\midrule
+interest & age\_new & 2.370 & 2 & 0.306 & 1.000 \\
+ & gender\_new & 0.115 & 1 & 0.734 & 1.000 \\
+ & edu\_new & 0.251 & 1 & 0.616 & 1.000 \\
+ & Rural\_Urban\_Group & 0.000 & 1 & 0.998 & 1.000 \\
+ & Employment\_Status\_Group & 3.473 & 3 & 0.324 & 1.000 \\
+ & lang\_new & 0.000 & 1 & 1.000 & 1.000 \\
+ & surveillance\_attitude\_new & 0.000 & 1 & 0.997 & 1.000 \\
+ & gov\_sat\_cat & 1.361 & 2 & 0.506 & 1.000 \\
+ & modrn\_tech\_law\_cat & 0.033 & 1 & 0.855 & 1.000 \\
+ & worried\_socialmedia & 1.397 & 3 & 0.706 & 1.000 \\
+ & worried\_eserv & 0.432 & 3 & 0.934 & 1.000 \\
+ & tech\_adoption\_new & 0.291 & 2 & 0.865 & 1.000 \\
+\midrule
+\bottomrule
+\end{tabular}
+\caption{Chi-Square Test Results Across Subgroups - Part1}
+\label{tab:test_results}
+\end{table}
+
+
+
+
+\begin{table}[h]
+\centering
+\footnotesize
+\begin{tabular}{@{}l l c c c c@{}}
+\toprule
+Attribute & Subgroup & $\chi^2$ Statistic & df & p-value & Adjusted p-value \\
+\midrule
+transparency & age\_new & 6.411 & 4 & 0.170 & 1.000 \\
+ & gender\_new & 0.602 & 2 & 0.740 & 1.000 \\
+ & edu\_new & 1.352 & 2 & 0.509 & 1.000 \\
+ & Rural\_Urban\_Group & 2.760 & 2 & 0.252 & 1.000 \\
+ & Employment\_Status\_Group & 5.948 & 6 & 0.429 & 1.000 \\
+ & lang\_new & 2.849 & 2 & 0.241 & 1.000 \\
+ & surveillance\_attitude\_new & 0.112 & 2 & 0.946 & 1.000 \\
+ & gov\_sat\_cat & 3.115 & 4 & 0.539 & 1.000 \\
+ & modrn\_tech\_law\_cat & 1.401 & 2 & 0.496 & 1.000 \\
+ & worried\_socialmedia & 8.466 & 6 & 0.206 & 1.000 \\
+ & worried\_eserv & 6.388 & 6 & 0.381 & 1.000 \\
+ & tech\_adoption\_new & 3.088 & 4 & 0.543 & 1.000 \\
+\midrule
+accountability & age\_new & 1.713 & 4 & 0.788 & 1.000 \\
+ & gender\_new & 7.118 & 2 & 0.028 & 1.000 \\
+ & edu\_new & 1.060 & 2 & 0.589 & 1.000 \\
+ & Rural\_Urban\_Group & 1.577 & 2 & 0.455 & 1.000 \\
+ & Employment\_Status\_Group & 5.864 & 6 & 0.439 & 1.000 \\
+ & lang\_new & 2.890 & 2 & 0.236 & 1.000 \\
+ & surveillance\_attitude\_new & 1.926 & 2 & 0.382 & 1.000 \\
+ & gov\_sat\_cat & 1.900 & 4 & 0.754 & 1.000 \\
+ & modrn\_tech\_law\_cat & 0.418 & 2 & 0.811 & 1.000 \\
+ & worried\_socialmedia & 3.530 & 6 & 0.740 & 1.000 \\
+ & worried\_eserv & 2.189 & 6 & 0.901 & 1.000 \\
+ & tech\_adoption\_new & 2.531 & 4 & 0.639 & 1.000 \\
+\midrule
+\bottomrule
+\end{tabular}
+\caption{Chi-Square Test Results Across Subgroups - Part2}
+\label{tab:test_results}
+\end{table}
+
+
+\begin{table}[!htbp] \centering \renewcommand*{\arraystretch}{1.1}\caption{Summary Statistics}\resizebox{\textwidth}{!}{
+\begin{tabular}{lrrrrrrrrl}
+\hline
+\hline
+decision & \multicolumn{2}{c}{Robbery Area} & \multicolumn{2}{c}{Robbery Person} & \multicolumn{2}{c}{Theft Area} & \multicolumn{2}{c}{Theft Person} &   \\ 
+ Variable & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{Test} \\ 
+\hline
+Surveillance Attitude & 278 &  & 261 &  & 224 &  & 218 &  & X2$=0.932^{}$ \\ 
+... Negative & 19 & 7\% & 19 & 7\% & 12 & 5\% & 16 & 7\% &  \\ 
+... Positive & 259 & 93\% & 242 & 93\% & 212 & 95\% & 202 & 93\% &  \\ 
+FI Government Satisfaction & 283 &  & 267 &  & 231 &  & 222 &  & X2$=5.175^{}$ \\ 
+... High Satisfaction & 95 & 34\% & 81 & 30\% & 75 & 32\% & 62 & 28\% &  \\ 
+... Low Satisfaction & 53 & 19\% & 48 & 18\% & 33 & 14\% & 35 & 16\% &  \\ 
+... Medium Satisfaction & 135 & 48\% & 138 & 52\% & 123 & 53\% & 125 & 56\% &  \\ 
+Modern Tech. in Law & 284 &  & 268 &  & 231 &  & 222 &  & X2$=0.417^{}$ \\ 
+... Appropiate & 191 & 67\% & 181 & 68\% & 161 & 70\% & 152 & 68\% &  \\ 
+... Not Appropiate & 93 & 33\% & 87 & 32\% & 70 & 30\% & 70 & 32\% &  \\ 
+Worried - Privacy - Social Media & 283 &  & 268 &  & 231 &  & 221 &  & X2$=7.724^{}$ \\ 
+... Not worried at All & 35 & 12\% & 38 & 14\% & 41 & 18\% & 31 & 14\% &  \\ 
+... Little Worried & 136 & 48\% & 129 & 48\% & 107 & 46\% & 96 & 43\% &  \\ 
+... Very Worried & 43 & 15\% & 28 & 10\% & 27 & 12\% & 29 & 13\% &  \\ 
+... Somewhat Worried & 69 & 24\% & 73 & 27\% & 56 & 24\% & 65 & 29\% &  \\ 
+Worried - Privacy - Public e-services & 284 &  & 267 &  & 231 &  & 221 &  & X2$=11.569^{}$ \\ 
+... Not worried at All & 92 & 32\% & 101 & 38\% & 90 & 39\% & 79 & 36\% &  \\ 
+... Little Worried & 135 & 48\% & 127 & 48\% & 112 & 48\% & 97 & 44\% &  \\ 
+... Very Worried & 17 & 6\% & 9 & 3\% & 8 & 3\% & 8 & 4\% &  \\ 
+... Somewhat Worried & 40 & 14\% & 30 & 11\% & 21 & 9\% & 37 & 17\% &  \\ 
+Technology Adoption & 284 &  & 267 &  & 230 &  & 222 &  & X2$=4.468^{}$ \\ 
+... Early Adopters & 55 & 19\% & 52 & 19\% & 55 & 24\% & 48 & 22\% &  \\ 
+... Laggards & 37 & 13\% & 26 & 10\% & 23 & 10\% & 20 & 9\% &  \\ 
+... Majority & 192 & 68\% & 189 & 71\% & 152 & 66\% & 154 & 69\% &  \\ 
+Age & 284 &  & 268 &  & 231 &  & 219 &  & X2$=0.386^{}$ \\ 
+... Young Adults & 58 & 20\% & 56 & 21\% & 49 & 21\% & 46 & 21\% &  \\ 
+... Older Adults & 83 & 29\% & 82 & 31\% & 66 & 29\% & 66 & 30\% &  \\ 
+... Middle-Aged & 143 & 50\% & 130 & 49\% & 116 & 50\% & 107 & 49\% &  \\ 
+Gender & 281 &  & 262 &  & 229 &  & 217 &  & X2$=7.835^{**}$ \\ 
+... Female & 131 & 47\% & 153 & 58\% & 123 & 54\% & 111 & 51\% &  \\ 
+... Male & 150 & 53\% & 109 & 42\% & 106 & 46\% & 106 & 49\% &  \\ 
+Education Level & 284 &  & 268 &  & 231 &  & 219 &  & X2$=1.576^{}$ \\ 
+... No College/University & 137 & 48\% & 135 & 50\% & 104 & 45\% & 102 & 47\% &  \\ 
+... College/University Education & 147 & 52\% & 133 & 50\% & 127 & 55\% & 117 & 53\% &  \\ 
+Area & 284 &  & 268 &  & 231 &  & 219 &  & X2$=1.989^{}$ \\ 
+... Urban & 226 & 80\% & 211 & 79\% & 192 & 83\% & 172 & 79\% &  \\ 
+... Rural & 58 & 20\% & 57 & 21\% & 39 & 17\% & 47 & 21\% &  \\ 
+Employment Status & 284 &  & 266 &  & 231 &  & 219 &  & X2$=5.997^{}$ \\ 
+... Retired & 100 & 35\% & 102 & 38\% & 91 & 39\% & 81 & 37\% &  \\ 
+... Students & 23 & 8\% & 20 & 8\% & 13 & 6\% & 20 & 9\% &  \\ 
+... Employed & 134 & 47\% & 123 & 46\% & 113 & 49\% & 96 & 44\% &  \\ 
+... Others & 27 & 10\% & 21 & 8\% & 14 & 6\% & 22 & 10\% &  \\ 
+Language & 278 &  & 264 &  & 228 &  & 216 &  & X2$=2.129^{}$ \\ 
+... Finnish & 269 & 97\% & 254 & 96\% & 223 & 98\% & 212 & 98\% &  \\ 
+... Swedish & 9 & 3\% & 10 & 4\% & 5 & 2\% & 4 & 2\% & \\ 
+\hline
+\hline
+\multicolumn{10}{l}{Statistical significance markers: * p<0.1; ** p<0.05; *** p<0.01}\\ 
+\end{tabular}
+}
+\end{table}
+
+
+
+\begin{table}[!htbp] \centering \renewcommand*{\arraystretch}{1.1}\caption{Summary Statistics}\resizebox{\textwidth}{!}{
+\begin{tabular}{lrrrrrrl}
+\hline
+\hline
+agency & \multicolumn{2}{c}{Alg Overruled} & \multicolumn{2}{c}{Alg. Only} & \multicolumn{2}{c}{Alg. Recommends} &   \\ 
+ Variable & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{Test} \\ 
+\hline
+Surveillance Attitude & 381 &  & 303 &  & 297 &  & X2$=2.248^{}$ \\ 
+... Negative & 28 & 7\% & 15 & 5\% & 23 & 8\% &  \\ 
+... Positive & 353 & 93\% & 288 & 95\% & 274 & 92\% &  \\ 
+FI Government Satisfaction & 395 &  & 305 &  & 303 &  & X2$=1.417^{}$ \\ 
+... High Satisfaction & 118 & 30\% & 101 & 33\% & 94 & 31\% &  \\ 
+... Low Satisfaction & 72 & 18\% & 48 & 16\% & 49 & 16\% &  \\ 
+... Medium Satisfaction & 205 & 52\% & 156 & 51\% & 160 & 53\% &  \\ 
+Modern Tech. in Law & 396 &  & 305 &  & 304 &  & X2$=1.223^{}$ \\ 
+... Appropiate & 262 & 66\% & 211 & 69\% & 212 & 70\% &  \\ 
+... Not Appropiate & 134 & 34\% & 94 & 31\% & 92 & 30\% &  \\ 
+Worried - Privacy - Social Media & 395 &  & 305 &  & 303 &  & X2$=8.76^{}$ \\ 
+... Not worried at All & 67 & 17\% & 39 & 13\% & 39 & 13\% &  \\ 
+... Little Worried & 178 & 45\% & 145 & 48\% & 145 & 48\% &  \\ 
+... Very Worried & 57 & 14\% & 30 & 10\% & 40 & 13\% &  \\ 
+... Somewhat Worried & 93 & 24\% & 91 & 30\% & 79 & 26\% &  \\ 
+Worried - Privacy - Public e-services & 396 &  & 303 &  & 304 &  & X2$=3.815^{}$ \\ 
+... Not worried at All & 149 & 38\% & 108 & 36\% & 105 & 35\% &  \\ 
+... Little Worried & 177 & 45\% & 147 & 49\% & 147 & 48\% &  \\ 
+... Very Worried & 19 & 5\% & 8 & 3\% & 15 & 5\% &  \\ 
+... Somewhat Worried & 51 & 13\% & 40 & 13\% & 37 & 12\% &  \\ 
+Technology Adoption & 394 &  & 305 &  & 304 &  & X2$=3.548^{}$ \\ 
+... Early Adopters & 81 & 21\% & 61 & 20\% & 68 & 22\% &  \\ 
+... Laggards & 34 & 9\% & 35 & 11\% & 37 & 12\% &  \\ 
+... Majority & 279 & 71\% & 209 & 69\% & 199 & 65\% &  \\ 
+Age & 394 &  & 304 &  & 304 &  & X2$=5.194^{}$ \\ 
+... Young Adults & 91 & 23\% & 54 & 18\% & 64 & 21\% &  \\ 
+... Older Adults & 105 & 27\% & 102 & 34\% & 90 & 30\% &  \\ 
+... Middle-Aged & 198 & 50\% & 148 & 49\% & 150 & 49\% &  \\ 
+Gender & 384 &  & 301 &  & 304 &  & X2$=0.636^{}$ \\ 
+... Female & 198 & 52\% & 155 & 51\% & 165 & 54\% &  \\ 
+... Male & 186 & 48\% & 146 & 49\% & 139 & 46\% &  \\ 
+Education Level & 394 &  & 304 &  & 304 &  & X2$=0.025^{}$ \\ 
+... No College/University & 189 & 48\% & 144 & 47\% & 145 & 48\% &  \\ 
+... College/University Education & 205 & 52\% & 160 & 53\% & 159 & 52\% &  \\ 
+Area & 394 &  & 304 &  & 304 &  & X2$=1.607^{}$ \\ 
+... Urban & 321 & 81\% & 244 & 80\% & 236 & 78\% &  \\ 
+... Rural & 73 & 19\% & 60 & 20\% & 68 & 22\% &  \\ 
+Employment Status & 393 &  & 303 &  & 304 &  & X2$=5.839^{}$ \\ 
+... Retired & 136 & 35\% & 127 & 42\% & 111 & 37\% &  \\ 
+... Students & 34 & 9\% & 19 & 6\% & 23 & 8\% &  \\ 
+... Employed & 190 & 48\% & 136 & 45\% & 140 & 46\% &  \\ 
+... Others & 33 & 8\% & 21 & 7\% & 30 & 10\% &  \\ 
+Language & 387 &  & 298 &  & 301 &  & X2$=0.419^{}$ \\ 
+... Finnish & 375 & 97\% & 289 & 97\% & 294 & 98\% &  \\ 
+... Swedish & 12 & 3\% & 9 & 3\% & 7 & 2\% & \\ 
+\hline
+\hline
+\multicolumn{8}{l}{Statistical significance markers: * p<0.1; ** p<0.05; *** p<0.01}\\ 
+\end{tabular}
+}
+\end{table}
+
+
+
+\begin{table}[!htbp] 
+\centering 
+\small
+\renewcommand*{\arraystretch}{1}
+\caption{Summary Statistics}
+\begin{tabular}{lrrrrl}
+\hline
+\hline
+Interest & \multicolumn{2}{c}{Private} & \multicolumn{2}{c}{Public} & Test \\ 
+Variable & N & \% & N & \% &  \\ 
+\hline
+Surveillance Attitude & 468 &  & 513 &  & X2$=0^{}$ \\ 
+... Negative & 32 & 7\% & 34 & 7\% &  \\ 
+... Positive & 436 & 93\% & 479 & 93\% &  \\ 
+FI Gov. Satisfaction & 479 &  & 524 &  & X2$=1.361$ \\ 
+... High & 143 & 30\% & 170 & 32\% &  \\ 
+... Low & 78 & 16\% & 91 & 17\% &  \\ 
+... Medium & 258 & 54\% & 263 & 50\% &  \\ 
+Modern Tech in Law & 481 &  & 524 &  & X2$=0.033$ \\ 
+... Appropriate & 326 & 68\% & 359 & 69\% &  \\ 
+... Not & 155 & 32\% & 165 & 31\% &  \\ 
+Worried - Privacy (Social Media) & 479 &  & 524 &  & X2$=1.397$ \\ 
+... Not Worried & 63 & 13\% & 82 & 16\% &  \\ 
+... Little Worried & 225 & 47\% & 243 & 46\% &  \\ 
+... Very Worried & 61 & 13\% & 66 & 13\% &  \\ 
+... Somewhat Worried & 130 & 27\% & 133 & 25\% &  \\ 
+Worried - Privacy (E-Services) & 479 &  & 524 &  & X2$=0.432$ \\ 
+... Not Worried & 169 & 35\% & 193 & 37\% &  \\ 
+... Little Worried & 229 & 48\% & 242 & 46\% &  \\ 
+... Very Worried & 21 & 4\% & 21 & 4\% &  \\ 
+... Somewhat Worried & 60 & 13\% & 68 & 13\% &  \\ 
+Tech Adoption & 479 &  & 524 &  & X2$=0.291$ \\ 
+... Early Adopters & 101 & 21\% & 109 & 21\% &  \\ 
+... Laggards & 48 & 10\% & 58 & 11\% &  \\ 
+... Majority & 330 & 69\% & 357 & 68\% &  \\ 
+Age & 481 &  & 521 &  & X2$=2.37$ \\ 
+... Young Adults & 94 & 20\% & 115 & 22\% &  \\ 
+... Older Adults & 153 & 32\% & 144 & 28\% &  \\ 
+... Middle-Aged & 234 & 49\% & 262 & 50\% &  \\ 
+Gender & 477 &  & 512 &  & X2$=0.115$ \\ 
+... Female & 253 & 53\% & 265 & 52\% &  \\ 
+... Male & 224 & 47\% & 247 & 48\% &  \\ 
+Education & 481 &  & 521 &  & X2$=0.251$ \\ 
+... No College & 225 & 47\% & 253 & 49\% &  \\ 
+... College & 256 & 53\% & 268 & 51\% &  \\ 
+Area & 481 &  & 521 &  & X2$=0^{}$ \\ 
+... Urban & 384 & 80\% & 417 & 80\% &  \\ 
+... Rural & 97 & 20\% & 104 & 20\% &  \\ 
+Employment & 480 &  & 520 &  & X2$=3.473$ \\ 
+... Retired & 189 & 39\% & 185 & 36\% &  \\ 
+... Students & 40 & 8\% & 36 & 7\% &  \\ 
+... Employed & 216 & 45\% & 250 & 48\% &  \\ 
+... Others & 35 & 7\% & 49 & 9\% &  \\ 
+Language & 472 &  & 514 &  & X2$=0^{}$ \\ 
+... Finnish & 459 & 97\% & 499 & 97\% &  \\ 
+... Swedish & 13 & 3\% & 15 & 3\% & \\ 
+\hline
+\hline
+\multicolumn{6}{l}{Statistical significance markers: * p<0.1; ** p<0.05; *** p<0.01}\\ 
+\end{tabular}
+\end{table}
+
+
+
+
+\begin{table}[!htbp] \centering \renewcommand*{\arraystretch}{1.1}\caption{Summary Statistics}\resizebox{\textwidth}{!}{
+\begin{tabular}{lrrrrrrl}
+\hline
+\hline
+mistake & \multicolumn{2}{c}{Algorithms} & \multicolumn{2}{c}{Humans} & \multicolumn{2}{c}{Same} &   \\ 
+ Variable & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{Test} \\ 
+\hline
+Surveillance Attitude & 360 &  & 318 &  & 303 &  & X2$=0.03^{}$ \\ 
+... Negative & 24 & 7\% & 21 & 7\% & 21 & 7\% &  \\ 
+... Positive & 336 & 93\% & 297 & 93\% & 282 & 93\% &  \\ 
+FI Government Satisfaction & 367 &  & 326 &  & 310 &  & X2$=2.643^{}$ \\ 
+... High Satisfaction & 119 & 32\% & 93 & 29\% & 101 & 33\% &  \\ 
+... Low Satisfaction & 66 & 18\% & 53 & 16\% & 50 & 16\% &  \\ 
+... Medium Satisfaction & 182 & 50\% & 180 & 55\% & 159 & 51\% &  \\ 
+Modern Tech. in Law & 368 &  & 327 &  & 310 &  & X2$=4.658^{*}$ \\ 
+... Appropiate & 260 & 71\% & 208 & 64\% & 217 & 70\% &  \\ 
+... Not Appropiate & 108 & 29\% & 119 & 36\% & 93 & 30\% &  \\ 
+Worried - Privacy - Social Media & 367 &  & 326 &  & 310 &  & X2$=3.939^{}$ \\ 
+... Not worried at All & 53 & 14\% & 48 & 15\% & 44 & 14\% &  \\ 
+... Little Worried & 180 & 49\% & 152 & 47\% & 136 & 44\% &  \\ 
+... Very Worried & 49 & 13\% & 40 & 12\% & 38 & 12\% &  \\ 
+... Somewhat Worried & 85 & 23\% & 86 & 26\% & 92 & 30\% &  \\ 
+Worried - Privacy - Public e-services & 366 &  & 327 &  & 310 &  & X2$=5.947^{}$ \\ 
+... Not worried at All & 145 & 40\% & 120 & 37\% & 97 & 31\% &  \\ 
+... Little Worried & 164 & 45\% & 153 & 47\% & 154 & 50\% &  \\ 
+... Very Worried & 16 & 4\% & 13 & 4\% & 13 & 4\% &  \\ 
+... Somewhat Worried & 41 & 11\% & 41 & 13\% & 46 & 15\% &  \\ 
+Technology Adoption & 368 &  & 325 &  & 310 &  & X2$=3.116^{}$ \\ 
+... Early Adopters & 74 & 20\% & 72 & 22\% & 64 & 21\% &  \\ 
+... Laggards & 41 & 11\% & 39 & 12\% & 26 & 8\% &  \\ 
+... Majority & 253 & 69\% & 214 & 66\% & 220 & 71\% &  \\ 
+Age & 367 &  & 326 &  & 309 &  & X2$=3.592^{}$ \\ 
+... Young Adults & 77 & 21\% & 63 & 19\% & 69 & 22\% &  \\ 
+... Older Adults & 115 & 31\% & 88 & 27\% & 94 & 30\% &  \\ 
+... Middle-Aged & 175 & 48\% & 175 & 54\% & 146 & 47\% &  \\ 
+Gender & 360 &  & 324 &  & 305 &  & X2$=5.592^{*}$ \\ 
+... Female & 173 & 48\% & 185 & 57\% & 160 & 52\% &  \\ 
+... Male & 187 & 52\% & 139 & 43\% & 145 & 48\% &  \\ 
+Education Level & 367 &  & 326 &  & 309 &  & X2$=2.842^{}$ \\ 
+... No College/University & 168 & 46\% & 168 & 52\% & 142 & 46\% &  \\ 
+... College/University Education & 199 & 54\% & 158 & 48\% & 167 & 54\% &  \\ 
+Area & 367 &  & 326 &  & 309 &  & X2$=3.736^{}$ \\ 
+... Urban & 290 & 79\% & 253 & 78\% & 258 & 83\% &  \\ 
+... Rural & 77 & 21\% & 73 & 22\% & 51 & 17\% &  \\ 
+Employment Status & 366 &  & 325 &  & 309 &  & X2$=5.734^{}$ \\ 
+... Retired & 136 & 37\% & 121 & 37\% & 117 & 38\% &  \\ 
+... Students & 34 & 9\% & 20 & 6\% & 22 & 7\% &  \\ 
+... Employed & 170 & 46\% & 149 & 46\% & 147 & 48\% &  \\ 
+... Others & 26 & 7\% & 35 & 11\% & 23 & 7\% &  \\ 
+Language & 361 &  & 321 &  & 304 &  & X2$=0.82^{}$ \\ 
+... Finnish & 353 & 98\% & 311 & 97\% & 294 & 97\% &  \\ 
+... Swedish & 8 & 2\% & 10 & 3\% & 10 & 3\% & \\ 
+\hline
+\hline
+\multicolumn{8}{l}{Statistical significance markers: * p<0.1; ** p<0.05; *** p<0.01}\\ 
+\end{tabular}
+}
+\end{table}
+
+
+
+\begin{table}[!htbp] \centering \renewcommand*{\arraystretch}{1.1}\caption{Summary Statistics}\resizebox{\textwidth}{!}{
+\begin{tabular}{lrrrrrrl}
+\hline
+\hline
+transparency & \multicolumn{2}{c}{Developer} & \multicolumn{2}{c}{Experts} & \multicolumn{2}{c}{Police} &   \\ 
+ Variable & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{Test} \\ 
+\hline
+Surveillance Attitude & 296 &  & 354 &  & 331 &  & X2$=0.112^{}$ \\ 
+... Negative & 19 & 6\% & 25 & 7\% & 22 & 7\% &  \\ 
+... Positive & 277 & 94\% & 329 & 93\% & 309 & 93\% &  \\ 
+FI Government Satisfaction & 305 &  & 364 &  & 334 &  & X2$=3.115^{}$ \\ 
+... High Satisfaction & 99 & 32\% & 106 & 29\% & 108 & 32\% &  \\ 
+... Low Satisfaction & 50 & 16\% & 70 & 19\% & 49 & 15\% &  \\ 
+... Medium Satisfaction & 156 & 51\% & 188 & 52\% & 177 & 53\% &  \\ 
+Modern Tech. in Law & 305 &  & 365 &  & 335 &  & X2$=1.401^{}$ \\ 
+... Appropiate & 207 & 68\% & 242 & 66\% & 236 & 70\% &  \\ 
+... Not Appropiate & 98 & 32\% & 123 & 34\% & 99 & 30\% &  \\ 
+Worried - Privacy - Social Media & 304 &  & 365 &  & 334 &  & X2$=8.466^{}$ \\ 
+... Not worried at All & 45 & 15\% & 45 & 12\% & 55 & 16\% &  \\ 
+... Little Worried & 145 & 48\% & 166 & 45\% & 157 & 47\% &  \\ 
+... Very Worried & 29 & 10\% & 58 & 16\% & 40 & 12\% &  \\ 
+... Somewhat Worried & 85 & 28\% & 96 & 26\% & 82 & 25\% &  \\ 
+Worried - Privacy - Public e-services & 305 &  & 365 &  & 333 &  & X2$=6.388^{}$ \\ 
+... Not worried at All & 115 & 38\% & 123 & 34\% & 124 & 37\% &  \\ 
+... Little Worried & 141 & 46\% & 180 & 49\% & 150 & 45\% &  \\ 
+... Very Worried & 10 & 3\% & 21 & 6\% & 11 & 3\% &  \\ 
+... Somewhat Worried & 39 & 13\% & 41 & 11\% & 48 & 14\% &  \\ 
+Technology Adoption & 305 &  & 364 &  & 334 &  & X2$=3.088^{}$ \\ 
+... Early Adopters & 61 & 20\% & 71 & 20\% & 78 & 23\% &  \\ 
+... Laggards & 32 & 10\% & 44 & 12\% & 30 & 9\% &  \\ 
+... Majority & 212 & 70\% & 249 & 68\% & 226 & 68\% &  \\ 
+Age & 304 &  & 363 &  & 335 &  & X2$=6.411^{}$ \\ 
+... Young Adults & 58 & 19\% & 84 & 23\% & 67 & 20\% &  \\ 
+... Older Adults & 105 & 35\% & 101 & 28\% & 91 & 27\% &  \\ 
+... Middle-Aged & 141 & 46\% & 178 & 49\% & 177 & 53\% &  \\ 
+Gender & 300 &  & 359 &  & 330 &  & X2$=0.602^{}$ \\ 
+... Female & 162 & 54\% & 188 & 52\% & 168 & 51\% &  \\ 
+... Male & 138 & 46\% & 171 & 48\% & 162 & 49\% &  \\ 
+Education Level & 304 &  & 363 &  & 335 &  & X2$=1.352^{}$ \\ 
+... No College/University & 141 & 46\% & 182 & 50\% & 155 & 46\% &  \\ 
+... College/University Education & 163 & 54\% & 181 & 50\% & 180 & 54\% &  \\ 
+Area & 304 &  & 363 &  & 335 &  & X2$=2.76^{}$ \\ 
+... Urban & 251 & 83\% & 291 & 80\% & 259 & 77\% &  \\ 
+... Rural & 53 & 17\% & 72 & 20\% & 76 & 23\% &  \\ 
+Employment Status & 304 &  & 361 &  & 335 &  & X2$=5.948^{}$ \\ 
+... Retired & 118 & 39\% & 136 & 38\% & 120 & 36\% &  \\ 
+... Students & 19 & 6\% & 34 & 9\% & 23 & 7\% &  \\ 
+... Employed & 142 & 47\% & 167 & 46\% & 157 & 47\% &  \\ 
+... Others & 25 & 8\% & 24 & 7\% & 35 & 10\% &  \\ 
+Language & 299 &  & 359 &  & 328 &  & X2$=2.849^{}$ \\ 
+... Finnish & 289 & 97\% & 353 & 98\% & 316 & 96\% &  \\ 
+... Swedish & 10 & 3\% & 6 & 2\% & 12 & 4\% & \\ 
+\hline
+\hline
+\multicolumn{8}{l}{Statistical significance markers: * p<0.1; ** p<0.05; *** p<0.01}\\ 
+\end{tabular}
+}
+\end{table}
+
+
+
+\begin{table}[!htbp] \centering \renewcommand*{\arraystretch}{1.1}\caption{Summary Statistics}\resizebox{\textwidth}{!}{
+\begin{tabular}{lrrrrrrl}
+\hline
+\hline
+accountability & \multicolumn{2}{c}{Developer (Acc)} & \multicolumn{2}{c}{Experts (Acc)} & \multicolumn{2}{c}{Polic(Acc)} &   \\ 
+ Variable & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Percent} & \multicolumn{1}{c}{Test} \\ 
+\hline
+Surveillance Attitude & 350 &  & 359 &  & 272 &  & X2$=1.926^{}$ \\ 
+... Negative & 20 & 6\% & 23 & 6\% & 23 & 8\% &  \\ 
+... Positive & 330 & 94\% & 336 & 94\% & 249 & 92\% &  \\ 
+FI Government Satisfaction & 356 &  & 367 &  & 280 &  & X2$=1.9^{}$ \\ 
+... High Satisfaction & 105 & 29\% & 124 & 34\% & 84 & 30\% &  \\ 
+... Low Satisfaction & 63 & 18\% & 59 & 16\% & 47 & 17\% &  \\ 
+... Medium Satisfaction & 188 & 53\% & 184 & 50\% & 149 & 53\% &  \\ 
+Modern Tech. in Law & 357 &  & 368 &  & 280 &  & X2$=0.418^{}$ \\ 
+... Appropiate & 247 & 69\% & 251 & 68\% & 187 & 67\% &  \\ 
+... Not Appropiate & 110 & 31\% & 117 & 32\% & 93 & 33\% &  \\ 
+Worried - Privacy - Social Media & 356 &  & 368 &  & 279 &  & X2$=3.53^{}$ \\ 
+... Not worried at All & 51 & 14\% & 59 & 16\% & 35 & 13\% &  \\ 
+... Little Worried & 157 & 44\% & 176 & 48\% & 135 & 48\% &  \\ 
+... Very Worried & 48 & 13\% & 44 & 12\% & 35 & 13\% &  \\ 
+... Somewhat Worried & 100 & 28\% & 89 & 24\% & 74 & 27\% &  \\ 
+Worried - Privacy - Public e-services & 357 &  & 366 &  & 280 &  & X2$=2.189^{}$ \\ 
+... Not worried at All & 126 & 35\% & 140 & 38\% & 96 & 34\% &  \\ 
+... Little Worried & 169 & 47\% & 168 & 46\% & 134 & 48\% &  \\ 
+... Very Worried & 16 & 4\% & 12 & 3\% & 14 & 5\% &  \\ 
+... Somewhat Worried & 46 & 13\% & 46 & 13\% & 36 & 13\% &  \\ 
+Technology Adoption & 356 &  & 367 &  & 280 &  & X2$=2.531^{}$ \\ 
+... Early Adopters & 74 & 21\% & 75 & 20\% & 61 & 22\% &  \\ 
+... Laggards & 41 & 12\% & 32 & 9\% & 33 & 12\% &  \\ 
+... Majority & 241 & 68\% & 260 & 71\% & 186 & 66\% &  \\ 
+Age & 357 &  & 366 &  & 279 &  & X2$=1.713^{}$ \\ 
+... Young Adults & 73 & 20\% & 77 & 21\% & 59 & 21\% &  \\ 
+... Older Adults & 114 & 32\% & 101 & 28\% & 82 & 29\% &  \\ 
+... Middle-Aged & 170 & 48\% & 188 & 51\% & 138 & 49\% &  \\ 
+Gender & 352 &  & 361 &  & 276 &  & X2$=7.118^{**}$ \\ 
+... Female & 194 & 55\% & 169 & 47\% & 155 & 56\% &  \\ 
+... Male & 158 & 45\% & 192 & 53\% & 121 & 44\% &  \\ 
+Education Level & 357 &  & 366 &  & 279 &  & X2$=1.06^{}$ \\ 
+... No College/University & 163 & 46\% & 181 & 49\% & 134 & 48\% &  \\ 
+... College/University Education & 194 & 54\% & 185 & 51\% & 145 & 52\% &  \\ 
+Area & 357 &  & 366 &  & 279 &  & X2$=1.577^{}$ \\ 
+... Urban & 290 & 81\% & 295 & 81\% & 216 & 77\% &  \\ 
+... Rural & 67 & 19\% & 71 & 19\% & 63 & 23\% &  \\ 
+Employment Status & 357 &  & 364 &  & 279 &  & X2$=5.864^{}$ \\ 
+... Retired & 143 & 40\% & 127 & 35\% & 104 & 37\% &  \\ 
+... Students & 32 & 9\% & 23 & 6\% & 21 & 8\% &  \\ 
+... Employed & 155 & 43\% & 184 & 51\% & 127 & 46\% &  \\ 
+... Others & 27 & 8\% & 30 & 8\% & 27 & 10\% &  \\ 
+Language & 349 &  & 361 &  & 276 &  & X2$=2.89^{}$ \\ 
+... Finnish & 335 & 96\% & 354 & 98\% & 269 & 97\% &  \\ 
+... Swedish & 14 & 4\% & 7 & 2\% & 7 & 3\% & \\ 
+\hline
+\hline
+\multicolumn{8}{l}{Statistical significance markers: * p<0.1; ** p<0.05; *** p<0.01}\\ 
+\end{tabular}
+}
+\end{table}
+
+
+\subsection*{Appedix A3: Attribute Non Attendance Results - LCL}
+\begin{table}[!htbp] \centering 
+  \caption{Conditional Logit Results with Robust Standard Errors} 
+  \label{condlogit} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Choice \\ 
+\hline \\[-1.8ex] 
+ Decision Robbery Area & 0.761$^{***}$ \\ 
+  & (0.092) \\ 
+  & \\ 
+ Decision Robbery Person & 0.527$^{***}$ \\ 
+  & (0.081) \\ 
+  & \\ 
+ Decision Theft Area & 0.469$^{***}$ \\ 
+  & (0.087) \\ 
+  & \\ 
+ Agency Alg Overruled & $-$0.583$^{***}$ \\ 
+  & (0.080) \\ 
+  & \\ 
+ Agency Alg. Recommends & 0.346$^{***}$ \\ 
+  & (0.075) \\ 
+  & \\ 
+ Mistake Algorithms & 0.096 \\ 
+  & (0.076) \\ 
+  & \\ 
+ Mistake Same & 0.232$^{**}$ \\ 
+  & (0.079) \\ 
+  & \\ 
+ Interest Private & $-$0.241$^{***}$ \\ 
+  & (0.061) \\ 
+  & \\ 
+ Transparency Experts & 0.361$^{***}$ \\ 
+  & (0.077) \\ 
+  & \\ 
+ Transparency Police & 0.437$^{***}$ \\ 
+  & (0.076) \\ 
+  & \\ 
+ Accountability Experts (Acc) & 0.389$^{***}$ \\ 
+  & (0.079) \\ 
+  & \\ 
+ Accountability Polic(Acc) & 0.537$^{***}$ \\ 
+  & (0.082) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 4,020 \\ 
+R$^{2}$ & 0.081 \\ 
+Max. Possible R$^{2}$ & 0.500 \\ 
+Log Likelihood & $-$1,224.088 \\ 
+Wald Test & 269.320$^{***}$ (df = 12) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.05; $^{**}$p$<$0.01; $^{***}$p$<$0.001} \\ 
+ & \multicolumn{1}{r}{Standard errors are cluster-robust.} \\ 
+\end{tabular} 
+\end{table} 
+
+
+\begin{sidewaystable}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline
+\multirow{2}{*}{\textbf{Parameter}} & \multicolumn{2}{c}{\textbf{BFGS}} & \multicolumn{2}{c}{\textbf{BHHH}} & \multicolumn{2}{c}{\textbf{Newton-Raphson (NR)}} \\
+\cline{2-7}
+ & Estimate (SE) & P-value & Estimate (SE) & P-value & Estimate (SE) & P-value \\
+\hline
+Class 1: Decision & -0.41 (0.06) & 0.000*** & -1.75 (0.97) & 0.071* & -1.76 (1.09) & 0.107 \\
+Class 1: Agency & 0.47 (0.09) & 0.000*** & 0.39 (0.40) & 0.335 & 0.39 (0.54) & 0.470 \\
+Class 1: Mistake & -0.23 (0.09) & 0.007*** & -0.32 (0.38) & 0.392 & -0.32 (0.40) & 0.420 \\
+Class 1: Interest & -0.04 (0.10) & 0.686 & 0.23 (0.52) & 0.650 & 0.23 (0.57) & 0.685 \\
+Class 1: Transparency & 0.19 (0.05) & 0.000*** & -0.40 (0.41) & 0.334 & -0.40 (0.73) & 0.581 \\
+Class 1: Accountability & 0.51 (0.08) & 0.000*** & 0.68 (0.53) & 0.199 & 0.68 (0.38) & 0.077* \\
+Class 2: Decision & 21.98 (15.68) & 0.161 & 0.09 (0.19) & 0.623 & 0.09 (0.20) & 0.641 \\
+Class 2: Agency & -94.87 (67.04) & 0.157 & 0.19 (0.09) & 0.027** & 0.19 (0.09) & 0.038** \\
+Class 2: Mistake & 118.42 (81.72) & 0.147 & 0.13 (0.10) & 0.183 & 0.13 (0.10) & 0.202 \\
+Class 2: Interest & 124.85 (86.44) & 0.149 & 0.28 (0.14) & 0.045** & 0.28 (0.13) & 0.034** \\
+Class 2: Transparency & 54.74 (38.86) & 0.159 & 0.35 (0.14) & 0.010** & 0.35 (0.12) & 0.002*** \\
+Class 2: Accountability & -52.43 (36.76) & 0.154 & 0.29 (0.09) & 0.001*** & 0.29 (0.09) & 0.001*** \\
+Class 2 membership & -1.26 (0.19) & 0.000*** & 0.73 (0.67) & 0.277 & 0.73 (0.76) & 0.332 \\
+\hline
+\multicolumn{7}{l}{\footnotesize \textit{Note:} * p$<$0.1; ** p$<$0.05; *** p$<$0.01. SE indicates Standard Error.} \\
+\multicolumn{7}{l}{\footnotesize Optimization methods: BFGS (Broyden–Fletcher–Goldfarb–Shanno), BHHH (Berndt–Hall–Hall–Hausman), NR (Newton-Raphson).}
+\end{tabular}%
+}
+\caption{Latent Class Logit Model Results (Q = 2) By Optimization Methods}
+\label{tab:combined_lc_logit_n2}
+\end{sidewaystable}
+
+\begin{sidewaystable}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline
+\multirow{2}{*}{\textbf{Parameter}} & \multicolumn{2}{c}{\textbf{BFGS}} & \multicolumn{2}{c}{\textbf{BHHH}} & \multicolumn{2}{c}{\textbf{Newton-Raphson (NR)}} \\
+\cline{2-7}
+ & Estimate (SE) & P-value & Estimate (SE) & P-value & Estimate (SE) & P-value \\
+\hline
+Class 1: Decision & -62 (67.68) & 0.360 & -2.63 (0.88) & 0.003*** & -172.97 (194.58) & 0.374 \\
+Class 1: Agency & 74.94 (80.76) & 0.353 & -0.14 (0.35) & 0.695 & 95.49 (108.59) & 0.379 \\
+Class 1: Mistake & -4.67 (6.00) & 0.437 & 1.28 (0.54) & 0.018** & 2.99 (3.22) & 0.353 \\
+Class 1: Interest & 73.53 (80.78) & 0.363 & -2.42 (1.01) & 0.016** & 48.34 (55.74) & 0.386 \\
+Class 1: Transparency & 21.74 (23.50) & 0.355 & -3.00 (1.08) & 0.006*** & -146.25 (165.14) & 0.376 \\
+Class 1: Accountability & 113.11 (122.95) & 0.358 & 1.58 (0.60) & 0.009*** & 20.90 (25.05) & 0.404 \\
+Class 2: Decision & -0.54 (0.19) & 0.004*** & -75.35 (465.99) & 0.872 & -0.01 (0.09) & 0.957 \\
+Class 2: Agency & 0.20 (0.11) & 0.074* & 86.47 (554.91) & 0.876 & -0.01 (0.10) & 0.945 \\
+Class 2: Mistake & -0.78 (0.40) & 0.051* & -7.58 (47.26) & 0.873 & 0.70 (0.25) & 0.005*** \\
+Class 2: Interest & 0.23 (0.14) & 0.113 & 65.22 (419.19) & 0.876 & 0.23 (0.13) & 0.070* \\
+Class 2: Transparency & 0.28 (0.09) & 0.002*** & 22.10 (141.79) & 0.876 & -0.02 (0.17) & 0.925 \\
+Class 2: Accountability & 0.04 (0.12) & 0.764 & 112.19 (696.26) & 0.872 & 0.90 (0.25) & 0.000*** \\
+Class 3: Decision & 14.17 (22.58) & 0.530 & 0.63 (0.26) & 0.015** & -8.04 (4.75) & 0.091* \\
+Class 3: Agency & -5.83 (7.63) & 0.445 & 0.16 (0.19) & 0.380 & 11.21 (6.69) & 0.094* \\
+Class 3: Mistake & 40.95 (62.37) & 0.511 & -0.15 (0.19) & 0.411 & -26.97 (15.95) & 0.091* \\
+Class 3: Interest & -1.59 (4.54) & 0.726 & 1.18 (0.44) & 0.008*** & 7.75 (4.27) & 0.069* \\
+Class 3: Transparency & 10.44 (16.04) & 0.515 & 1.49 (0.51) & 0.003*** & 30.93 (18.21) & 0.089* \\
+Class 3: Accountability & 4.78 (6.93) & 0.490 & -0.33 (0.24) & 0.158 & -14.29 (8.73) & 0.102 \\
+Class 2 membership & 0.88 (0.28) & 0.002*** & -0.40 (0.19) & 0.035** & 1.03 (0.25) & 0.000*** \\
+Class 3 membership & 0.22 (0.22) & 0.315 & 0.20 (0.15) & 0.177 & 0.47 (0.24) & 0.053* \\
+\hline
+\multicolumn{7}{l}{\footnotesize \textit{Note:} * p$<$0.1; ** p$<$0.05; *** p$<$0.01. SE indicates Standard Error.} \\
+\multicolumn{7}{l}{\footnotesize Optimization methods: BFGS (Broyden–Fletcher–Goldfarb–Shanno), BHHH (Berndt–Hall–Hall–Hausman), NR (Newton-Raphson).}
+\end{tabular}%
+}
+\caption{Latent Class Logit Model Results (Q = 3) By Optimization Methods}
+\label{tab:combined_lc_logit}
+\end{sidewaystable}
+
+
+
+
+
+\begin{sidewaystable}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline
+\multirow{2}{*}{\textbf{Parameter}} & \multicolumn{2}{c}{\textbf{BFGS}} & \multicolumn{2}{c}{\textbf{BHHH}} & \multicolumn{2}{c}{\textbf{Newton-Raphson (NR)}} \\
+\cline{2-7}
+ & Estimate (SE) & P-value & Estimate (SE) & P-value & Estimate (SE) & P-value \\
+\hline
+Class 1: Decision & -89.80 (55.28) & 0.104 & -146.01 (565678.89) & 1.000 & -10.15 (7.41) & 0.171 \\
+Class 1: Agency & 90.37 (55.50) & 0.103 & 64.91 (251412.86) & 1.000 & 2.40 (1.91) & 0.208 \\
+Class 1: Mistake & -24.45 (13.76) & 0.076* & 16.18 (62853.19) & 1.000 & -3.91 (2.71) & 0.149 \\
+Class 1: Interest & 17.02 (12.25) & 0.165 & 2.72 (13.92) & 0.845 & 9.48 (6.85) & 0.167 \\
+Class 1: Transparency & 27.40 (16.36) & 0.094* & -112.76 (439972.49) & 1.000 & -0.81 (0.85) & 0.344 \\
+Class 1: Accountability & 145.56 (88.51) & 0.100 & 30.64 (125706.45) & 1.000 & 0.12 (0.80) & 0.883 \\
+Class 2: Decision & -101.75 (21.21) & 0.000*** & -0.38 (0.17) & 0.029** & -44.21 (28.99) & 0.127 \\
+Class 2: Agency & 53.30 (19.94) & 0.008*** & 1.01 (0.35) & 0.004*** & 11.74 (8.30) & 0.157 \\
+Class 2: Mistake & -93.54 (NaN) & NaN & -1.14 (0.40) & 0.004*** & 68.22 (44.25) & 0.123 \\
+Class 2: Interest & 75.02 (NaN) & NaN & 0.18 (0.33) & 0.600 & 11.25 (7.04) & 0.110 \\
+Class 2: Transparency & -22.87 (17.30) & 0.186 & 0.86 (0.33) & 0.009*** & 17.05 (10.82) & 0.115 \\
+Class 2: Accountability & -0.50 (1.89) & 0.792 & 0.03 (0.21) & 0.880 & 146.82 (95.86) & 0.126 \\
+Class 3: Decision & 46.26 (27.01) & 0.087* & -45.64 (192.74) & 0.813 & 34.25 (24.50) & 0.162 \\
+Class 3: Agency & -30.11 (18.51) & 0.104 & 4.44 (33.05) & 0.893 & -17.54 (12.30) & 0.154 \\
+Class 3: Mistake & 80.90 (50.29) & 0.108 & 71.81 (301.12) & 0.812 & -57.42 (40.93) & 0.161 \\
+Class 3: Interest & 0.66 (NaN) & NaN & 5.29 (25.22) & 0.834 & 6.05 (4.24) & 0.154 \\
+Class 3: Transparency & 64.59 (41.38) & 0.119 & 18.75 (73.74) & 0.799 & -46.45 (33.20) & 0.162 \\
+Class 3: Accountability & 7.97 (6.11) & 0.192 & 153.28 (648.69) & 0.813 & -7.13 (4.77) & 0.135 \\
+Class 4: Decision & 106.65 (140.93) & 0.449 & 0.43 (0.31) & 0.172 & -7.18 (4.62) & 0.120 \\
+Class 4: Agency & -71.63 (94.45) & 0.448 & -1.54 (0.76) & 0.043** & 43.76 (27.61) & 0.113 \\
+Class 4: Mistake & 104.96 (137.96) & 0.447 & 2.06 (0.92) & 0.025** & 11.12 (6.81) & 0.103 \\
+Class 4: Interest & -39.61 (52.27) & 0.449 & 1.47 (0.88) & 0.094* & -7.13 (4.59) & 0.121 \\
+Class 4: Transparency & 13.00 (19.73) & 0.510 & 0.43 (0.47) & 0.359 & 54.28 (34.25) & 0.113 \\
+Class 4: Accountability & -33.84 (45.54) & 0.457 & 0.05 (0.40) & 0.896 & -16.10 (9.94) & 0.105 \\
+\hline
+\multicolumn{7}{l}{\footnotesize \textit{Note:} * p$<$0.1; ** p$<$0.05; *** p$<$0.01. SE indicates Standard Error.} \\
+\multicolumn{7}{l}{\footnotesize Optimization methods: BFGS (Broyden–Fletcher–Goldfarb–Shanno), BHHH (Berndt–Hall–Hall–Hausman), NR (Newton-Raphson).}
+\end{tabular}%
+}
+\caption{Latent Class Logit Model Results (Q = 4) By Optimization Methods}
+\label{tab:combined_lc_logit_n4}
+\end{sidewaystable}
+
+
+\begin{sidewaystable}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline
+\multirow{2}{*}{\textbf{Parameter}} & \multicolumn{2}{c}{\textbf{BFGS}} & \multicolumn{2}{c}{\textbf{BHHH}} & \multicolumn{2}{c}{\textbf{Newton-Raphson (NR)}} \\
+\cline{2-7}
+ & Estimate (SE) & P-value & Estimate (SE) & P-value & Estimate (SE) & P-value \\
+\hline
+Class 1: Decision & -0.284 (0.037) & 0.000*** & -1.935 (1.200) & 0.107 & -1.964 (1.772) & 0.268 \\
+Class 1: Agency & 0.028 (0.059) & 0.639 & 0.381 (0.455) & 0.402 & 0.391 (0.795) & 0.623 \\
+Class 1: Interest & 0.311 (0.076) & 0.000*** & 0.259 (0.606) & 0.669 & 0.259 (0.617) & 0.675 \\
+Class 1: Transparency & -0.045 (0.077) & 0.561 & -0.896 (0.738) & 0.225 & -0.922 (1.612) & 0.567 \\
+Class 1: Accountability & 0.370 (0.055) & 0.000*** & 0.588 (0.551) & 0.286 & 0.589 (0.413) & 0.153 \\
+Class 2: Decision & -9.496 (8.798) & 0.280 & 0.033 (0.152) & 0.829 & 0.030 (0.203) & 0.883 \\
+Class 2: Agency & 109.162 (94.909) & 0.250 & 0.193 (0.076) & 0.011** & 0.192 (0.090) & 0.033** \\
+Class 2: Mistake & 6.162 (6.121) & 0.314 & 0.069 (0.052) & 0.191 & 0.068 (0.054) & 0.209 \\
+Class 2: Interest & -32.638 (29.570) & 0.270 & 0.256 (0.121) & 0.035** & 0.256 (0.116) & 0.027** \\
+Class 2: Transparency & 134.960 (117.728) & 0.252 & 0.377 (0.138) & 0.006*** & 0.375 (0.125) & 0.003*** \\
+Class 2: Accountability & -11.562 (10.739) & 0.282 & 0.307 (0.085) & 0.000*** & 0.307 (0.083) & 0.000*** \\
+Class 2 membership & -1.365 (0.236) & 0.000*** & 0.947 (0.649) & 0.145 & 0.961 (0.901) & 0.286 \\
+\hline
+\multicolumn{7}{l}{\footnotesize \textit{Note:} * p$<$0.05; ** p$<$0.01; *** p$<$0.001. SE indicates Standard Error.} \\
+\multicolumn{7}{l}{\footnotesize Optimization methods: BFGS (Broyden–Fletcher–Goldfarb–Shanno), BHHH (Berndt–Hall–Hall–Hausman), NR (Newton-Raphson).}
+\end{tabular}%
+}
+\caption{Constraint Latent Class Logit Model Results (Mistake) By Optimization Methods}
+\label{tab:combined_lc_logit_2class_v2}
+\end{sidewaystable}
+
+\begin{sidewaystable}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline
+\multirow{2}{*}{\textbf{Parameter}} & \multicolumn{2}{c}{\textbf{BFGS}} & \multicolumn{2}{c}{\textbf{BHHH}} & \multicolumn{2}{c}{\textbf{Newton-Raphson (NR)}} \\
+\cline{2-7}
+ & Estimate (SE) & P-value & Estimate (SE) & P-value & Estimate (SE) & P-value \\
+\hline
+Class 1: Decision & -0.369 (0.051) & 0.000*** & -1.778 (0.955) & 0.063. & -1.798 (1.042) & 0.084. \\
+Class 1: Agency & 0.326 (0.062) & 0.000*** & 0.396 (0.404) & 0.326 & 0.403 (0.552) & 0.465 \\
+Class 1: Mistake & -0.180 (0.077) & 0.019* & -0.332 (0.383) & 0.385 & -0.334 (0.398) & 0.401 \\
+Class 1: Transparency & 0.142 (0.053) & 0.008** & -0.414 (0.416) & 0.320 & -0.424 (0.709) & 0.549 \\
+Class 1: Accountability & 0.529 (0.084) & 0.000*** & 0.683 (0.519) & 0.188 & 0.687 (0.370) & 0.063. \\
+Class 2: Decision & 19.238 (46.935) & 0.682 & 0.090 (0.181) & 0.619 & 0.087 (0.188) & 0.643 \\
+Class 2: Agency & -51.034 (121.358) & 0.674 & 0.187 (0.084) & 0.025* & 0.187 (0.088) & 0.034* \\
+Class 2: Mistake & 116.687 (275.296) & 0.672 & 0.131 (0.097) & 0.174 & 0.130 (0.099) & 0.189 \\
+Class 2: Interest & 75.839 (181.209) & 0.676 & 0.287 (0.100) & 0.004** & 0.286 (0.097) & 0.003** \\
+Class 2: Transparency & 81.761 (194.209) & 0.674 & 0.351 (0.131) & 0.008** & 0.349 (0.112) & 0.002** \\
+Class 2: Accountability & -88.541 (208.220) & 0.671 & 0.293 (0.088) & 0.001*** & 0.293 (0.085) & 0.001*** \\
+Class 2 membership & -1.481 (0.215) & 0.000*** & 0.746 (0.650) & 0.251 & 0.758 (0.708) & 0.284 \\
+\hline
+\multicolumn{7}{l}{\footnotesize \textit{Note:} . p$<$0.1; * p$<$0.05; ** p$<$0.01; *** p$<$0.001. SE indicates Standard Error.} \\
+\multicolumn{7}{l}{\footnotesize Optimization methods: BFGS (Broyden–Fletcher–Goldfarb–Shanno), BHHH (Berndt–Hall–Hall–Hausman), NR (Newton-Raphson).}
+\end{tabular}%
+}
+\caption{Constraint Latent Class Logit Model Results (Interest) By Optimization Methods}
+\label{tab:combined_lc_logit_interest}
+\end{sidewaystable}
+
+
+\begin{sidewaystable}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\hline
+\multirow{2}{*}{\textbf{Parameter}} & \multicolumn{2}{c}{\textbf{BFGS}} & \multicolumn{2}{c}{\textbf{BHHH}} & \multicolumn{2}{c}{\textbf{Newton-Raphson (NR)}} \\
+\cline{2-7}
+ & Estimate (SE) & P-value & Estimate (SE) & P-value & Estimate (SE) & P-value \\
+\hline
+Class 1: Decision & -0.358 (0.351) & 0.307 & -1.908 (1.089) & 0.080. & -1.919 (1.331) & 0.150 \\
+Class 1: Agency & 0.692 (0.461) & 0.134 & 0.330 (0.430) & 0.443 & 0.332 (0.505) & 0.511 \\
+Class 1: Mistake & -0.890 (0.376) & 0.018* & -0.091 (0.392) & 0.816 & -0.086 (0.629) & 0.892 \\
+Class 1: Interest & 0.259 (0.397) & 0.513 & 0.273 (0.619) & 0.659 & 0.273 (0.622) & 0.661 \\
+Class 1: Transparency & 0.948 (0.664) & 0.153 & -0.899 (0.694) & 0.195 & -0.915 (1.468) & 0.533 \\
+Class 2: Decision & -0.276 (0.272) & 0.309 & 0.040 (0.140) & 0.776 & 0.038 (0.193) & 0.844 \\
+Class 2: Agency & -0.089 (0.208) & 0.668 & 0.200 (0.078) & 0.011* & 0.200 (0.079) & 0.012* \\
+Class 2: Mistake & 0.714 (0.454) & 0.116 & 0.085 (0.075) & 0.260 & 0.084 (0.118) & 0.478 \\
+Class 2: Interest & 0.227 (0.304) & 0.455 & 0.256 (0.122) & 0.036* & 0.256 (0.120) & 0.032* \\
+Class 2: Transparency & -0.188 (0.248) & 0.450 & 0.381 (0.136) & 0.005** & 0.381 (0.120) & 0.001** \\
+Class 2: Accountability & 0.456 (0.133) & 0.001*** & 0.353 (0.072) & 0.000*** & 0.352 (0.072) & 0.000*** \\
+Class 2 membership & 0.145 (0.614) & 0.813 & 0.942 (0.583) & 0.106 & 0.949 (0.753) & 0.208 \\
+\hline
+\multicolumn{7}{l}{\footnotesize \textit{Note:} . p$<$0.1; * p$<$0.05; ** p$<$0.01; *** p$<$0.001. SE indicates Standard Error.} \\
+\multicolumn{7}{l}{\footnotesize Optimization methods: BFGS (Broyden–Fletcher–Goldfarb–Shanno), BHHH (Berndt–Hall–Hall–Hausman), NR (Newton-Raphson).}
+\end{tabular}%
+}
+\caption{Constraint Latent Class Logit Model Results (Accountability) By Optimization Methods}
+\label{tab:combined_lc_logit_account}
+\end{sidewaystable}

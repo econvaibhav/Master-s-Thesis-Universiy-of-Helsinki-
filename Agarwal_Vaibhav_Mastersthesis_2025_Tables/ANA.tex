@@ -1,0 +1,54 @@
+\begin{table}[H]
+\centering
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.95}
+\caption{Evidence of ANA using Latent Class Logit Models and Robustness Check}
+\begin{tabular}{@{}l c|c|ccc|ccc|ccc@{}}
+\toprule
+\textbf{Attribute} & \textbf{Logit} & \textbf{Att. Imp} & \multicolumn{3}{c|}{\textbf{LC Logit-2}} & \multicolumn{3}{c|}{\textbf{LC Logit-3}} & \multicolumn{3}{c}{\textbf{LC Logit-4}} \\
+ & (CL) & (AT) & \textbf{I} & \textbf{II} & \textbf{III} & \textbf{I} & \textbf{II} & \textbf{III} & \textbf{I} & \textbf{II} & \textbf{III} \\
+\midrule
+\textbf{Decision} & & & \cross & \tick & \tick & \cross & \cross & \tick & \cross & \cross & \cross \\
+\quad Robbery Person & \cross & \cross & & & & & & & & & \\
+\quad Robbery Area & \cross & \cross & & & & & & & & & \\
+\quad Theft Area & \cross & \tick & & & & & & & & & \\
+\quad Theft Person & - & - & & & & & & & & & \\
+\midrule
+\textbf{Agency} & & & \cross & \cross & \cross & \cross & \tick & \tick & \cross & \cross & \cross\\
+\quad Alg. Only & - & - & & & & & & & & & \\
+\quad Alg. Overruled & \cross & \cross & & & & & & & & & \\
+\quad Alg. Recommends & \cross & \cross & & & & & & & & & \\
+\midrule
+\textbf{Mistake} & & & \cross & \tick & \tick & \cross & \tick & \cross & \cross & \cross & \cross \\
+\quad Humans & - & - & & & & & & & & & \\
+\quad Algorithms & \tick & \tick & & & & & & & & & \\
+\quad Same & \cross & \tick & & & & & & & & & \\
+\midrule
+\textbf{Interest} & & & \tick & \cross & \cross & \cross & \tick & \cross & \cross & \tick & \cross \\
+\quad Private & \cross & \cross & & & & & & & & & \\
+\quad Public & - & - & & & & & & & & & \\
+\midrule
+\textbf{Transparency} & & & \cross & \cross & \cross & \cross & \cross & \tick & \cross & \cross & \cross \\
+\quad Developer & - & - & & & & & & & & & \\
+\quad Police & \cross & \cross & & & & & & & & & \\
+\quad Experts & \cross & \cross & & & & & & & & & \\
+\midrule
+\textbf{Accountability} & & & \cross & \cross & \cross & \tick & \tick & \cross & \cross & \tick & \tick \\
+\quad Developer & - & - & & & & & & & & & \\
+\quad Police & \cross & \cross & & & & & & & & & \\
+\quad Experts & \cross & \cross & & & & & & & & & \\
+\bottomrule
+\end{tabular}
+
+\vspace{1em}
+\raggedright
+\textbf{Notes: Marked as \tick if one class hints towards ANA} \\
+CL = Conditional Logit \\
+AT = Attribute Importance \\
+LC Logit = Latent Class Logit \\
+LC Logit-2/3/4 = 2-class, 3-class, and 4-class Latent Class Logit models respectively \\
+I = BFGS (Broyden-Fletcher-Goldfarb-Shanno) Optimization \\
+II = BHHH (Berndt–Hall–Hall–Hausman) Optimization \\
+III = NR (Newton-Raphson) Optimization
+\label{tab:model_comparison}
+\end{table}

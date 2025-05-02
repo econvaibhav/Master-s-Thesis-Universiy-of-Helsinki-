@@ -1,0 +1,27 @@
+\begin{table}[H]
+\centering
+\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1}
+\caption{Differences in Results based on Baseline Choice and Tasks}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Methodology} & \textbf{Baseline Check} & \textbf{Task 1 vs. Task 2} \\
+\midrule
+MM & -- & Little \\
+AMCE & \tick & Little \\
+ACP & \tick & Little \\
+Relative Imp.: C. Logit & \cross & \tick \\
+Relative Imp.: ACP & \tick & \tick \\
+Attribute Level Imp.: C. Logit & \tick & Little \\
+ANA & --  & -- \\
+\bottomrule
+\end{tabular}
+
+\vspace{1em}
+\raggedright
+\textbf{Notes:} \\
+\tick \ = No difference seen \\
+\cross \ = Major difference seen and methodology not used \\
+-- = Not Applicable
+\label{tab:robustness_methods}
+\end{table}
